@@ -28,19 +28,16 @@ const DriverSchema=new mongoose.Schema({
 
 })
 
-DriverSchema.methods.genToken=async()=>{
+DriverSchema.methods.genToken=async(DriverDoc)=>{
 try{
-    const token = jwt.sign({ _id: this._id }, "secreat key");
-    console.log(this.tokens)
-    console.log(this._id)
-    this.tokens = this.tokens.concat({ token });
-    await this.save();
-    return token;
-    // const token=jwt.sign({_id:this._id},"secreate key")
-    // console.log(token)
-    // this.tokens=this.tokens.concat({token})
-    // await this.save()
-    // return token
+// console.log(DriverDoc._id)
+   const token = jwt.sign({_id:DriverDoc._id}, "secreat key");
+
+
+DriverDoc.tokens=DriverDoc.tokens.concat({token})
+
+
+    return token
     
 
 }catch(error){
