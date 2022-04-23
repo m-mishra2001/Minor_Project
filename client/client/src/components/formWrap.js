@@ -8,41 +8,21 @@ import { ThemeProvider } from '@emotion/react';
 import Textinput from './inputFields';
 import { useNavigate } from 'react-router-dom';
 import { Link, useHistory } from "react-router-dom";
-
-// const WrapStyle=styled('div')({
-//     backgroundColor:"#12395D",
-//     width:'500px',
-//     height:'450px',
-//     borderRadius:'15px',
-//     position: 'absolute',
-    
-    
-// })
+import theme from '../theme';
 
 
-// const LoginText=styled('div')({
-//     paddingTop:'30px',
-//     width:'292px',
-//     height:'42px',
-//     marginTop:'58px',
-//     marginLeft:'auto',
-//     marginRight:'auto',
-//     alignContent:'center',
-//     backgroundColor:'red'
-// })
-
-const theme = createTheme({
-    breakpoints: {
-      values: {
-       xxs: 0, // small phone
-       sx: 300, // phone
-        xs: 400, // phone
-        sm: 600, // tablets
-        md: 950, // small laptop
+// const theme = createTheme({
+//     breakpoints: {
+//       values: {
+//        xxs: 0, // small phone
+//        sx: 300, // phone
+//         xs: 400, // phone
+//         sm: 600, // tablets
+//         md: 950, // small laptop
         
-      }
-    }
-  });
+//       }
+//     }
+//   });
 
 const FormWrap=(props)=>{
   const navigate = useNavigate();
