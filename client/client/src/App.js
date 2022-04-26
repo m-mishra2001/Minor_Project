@@ -8,11 +8,16 @@ import ActivateUser from './components/activateUser'
 import './components/Drivers/driver.css'
 import './components/HomePage/style.css'
 import './components/AllUsersLR/allUser.css'
+import './components/User/userStyle.css'
 import DriverForm from './components/Drivers/driverForm';
 import CarCards from './components/TravelAgencies/carCards';
 import Main from './components/HomePage/main';
 import AllUsers from './components/AllUsersLR/allUsers';
 import CustomizedDialogs from './components/AllUsersLR/Dialog';
+import NavBar from './components/User/navBar';
+import UserPage from './components/User/userprofile';
+import TravelAgencyPage from './components/User/travelAgency';
+import FilterTA from './components/User/filerTA';
 function App() {
   return (
    <>
@@ -25,6 +30,9 @@ function App() {
              <Route path='/driverForm' element={<DriverForm/>}/>
              <Route path='/carCards' element={<CarCards/>}/>
              <Route path='/allUsers' element={<AllUsers/>}/>
+             <Route path='/userProfile' element={<UserPage/>}/>
+             <Route path='/travelAgency' element={<TravelAgencyPage/>}/>
+             <Route path='filters' element={<FilterTA/>}/>
            </Routes>
      </BrowserRouter>
    </>

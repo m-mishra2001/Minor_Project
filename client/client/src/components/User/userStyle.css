@@ -1,0 +1,94 @@
+.formdiv{
+   width:'10px';
+   height:'350px';
+   margin-left:'555px';
+   margin-top:'70px';
+   background:black
+}
+
+.inputField1{
+    background-color: #C4C4C4;
+    border :0px solid;
+    width:300px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.inputField2{
+    background-color: #C4C4C4;
+    border :0px solid;
+    width:760px;
+    height: 50px;
+    border-radius: 5px;
+   
+}
+.btn{
+    background-color: #5381F4;
+    border:0px solid;
+    height: 50px;
+    width: 300px;
+    border-radius: 37px;
+}
+.myProfile{
+    height: 80vh;
+    width: 50vw;    
+   
+    align-items: center ;
+    
+}
+
+/* travel Agency css */
+.filterTA{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height:407px;
+    background-color: azure;
+}
+
+
+/* media queries */
+@media (max-width:990px){
+    .inputField1{
+      
+        width:250px;
+        height: 50px;
+       
+    }
+    .inputField2{
+        
+        width:530px;
+        height: 50px;
+        
+    } 
+}
+@media (max-width:600px){
+    .inputField1{
+      
+        width:200px;
+        height: 50px;
+       
+    }
+    .inputField2{
+        
+        width:200px;
+        height: 50px;
+       
+        
+    } 
+}
+@media (max-width:400px){
+    .inputField1{
+      
+        width:200px;
+        height: 50px;
+       
+    }
+    .inputField2{
+        
+        width:200px;
+        height: 50px;
+       
+        
+    } 
+}

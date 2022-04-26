@@ -39,4 +39,4 @@ const heading={
 }
 
 export default allUsers
-export {button,gridDiv,heading}
+export {button,gridDiv,heading,theme}
