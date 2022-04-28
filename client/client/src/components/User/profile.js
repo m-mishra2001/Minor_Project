@@ -8,20 +8,28 @@ const Profile=()=>{
         alt="Remy Sharp"
         src="/static/images/avatar/1.jpg"
             sx={{ width: {
-            md:'250px' ,
-            sm:'250px',
-            xs:'200px' ,
+            md:'200px' ,
+            sm:'200px',
+            xs:'150px' ,
            
             }, height: {
-            md:'250px' ,
-            sm:'250px',
-            xs:'200px'  
+            md:'200px' ,
+            sm:'200px',
+            xs:'150px'  
             } ,marginLeft:{
-                md:55,
-                sm:40,
-                xs:15,
+                md:'auto',
+                sm:'auto',
+                xs:'auto',
                 sx:18
-            },marginTop:4,
+            },
+            marginRight:{
+                md:'auto',
+                sm:'auto',
+                xs:'auto',
+                sx:18
+            },
+            
+            marginTop:'10px',
            
             }}
       />

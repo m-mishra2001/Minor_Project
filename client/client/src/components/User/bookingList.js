@@ -14,7 +14,7 @@ export default function BookingList() {
   return (
    <ThemeProvider theme={theme}>
      <List sx={{ width: '100%', maxWidth:{
-       md: 1000,
+       md: '40vw',
        sm:700,
        xs:300,
        sx:250 
@@ -23,7 +23,7 @@ export default function BookingList() {
        sm:'auto',
        xs:'90px',
        sx:'90px'
-     },marginRight:'auto',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',marginTop:'20px' }}>
+     },marginRight:'auto',boxShadow: 'rgba(0, 0, 0, 0.35) 0px 2px 10px',marginTop:'40px' }}>
       <ListItem alignItems="flex-start">
       
         {/* <ListItemAvatar>

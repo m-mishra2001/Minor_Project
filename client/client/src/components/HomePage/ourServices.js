@@ -3,6 +3,7 @@ import React from 'react'
 import TaVector from './TaVector.png'
 import DVector from './DVector.png'
 import { ThemeProvider } from '@emotion/react'
+import CarAttach from '../AllUsersLR/AttachCar.png'
 import theme from '../../theme'
 const OurServices=()=>{
 
@@ -11,8 +12,7 @@ const OurServices=()=>{
      <h1 className='servicesHeading'>Our Services</h1>
      <Grid container sx={{
          marginLeft:'138px',
-         
-         
+         width:'1280px'  
      }}>
      {/* Travel Agency section */}
      <Grid item md={6} sm={12}>
@@ -158,7 +158,7 @@ text ever since the 1500s, when an unknown printer</p>
 </ThemeProvider>
      </Grid>
      <Grid item sm={6}>
-      hello
+     <img src={CarAttach} className='TaVector'/>
      </Grid>
      {/* </Grid> */}
      </Grid>

@@ -16,11 +16,13 @@ import MenuItem from '@mui/material/MenuItem';
 import theme from '../../theme';
 import { ThemeProvider } from '@emotion/react';
 import PersistentDrawerLeft from './drawer';
+import { useNavigate } from 'react-router-dom';
 
 const pages = ['Home', 'Travel Agency', 'Drivers'];
 const settings = ['Manage Account', 'Logout'];
 
 const NavBar=()=>{
+  const navigate=useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
     
@@ -114,10 +116,13 @@ const NavBar=()=>{
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>{
+                  page=="Travel Agency"? navigate("/travelAgency"):(page=="Drivers"?navigate("/drivers"):navigate("/"))
+                }}
                 sx={{ my: 2, color: 'white', display: 'block',margin:'10px',color:'black',fontWeight:'400',fontSize:'16px' }}
               >
                 {page}
+               
               </Button>
             ))}
           </Box> 
@@ -145,7 +150,9 @@ const NavBar=()=>{
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem key={setting} onClick={()=>{
+                  setting=="Manage Account"?navigate("/userProfile"):handleCloseUserMenu()
+                }}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}

@@ -1,6 +1,8 @@
 import React from 'react'
+import FilterTA from './filerTA'
+import NavBar from './navBar'
 import TextField from '@mui/material/TextField';
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 
 import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
@@ -9,17 +11,22 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
+import DCards from './driverProfileCard';
 function valuetext(value) {
     return `${value}°C`;
   }
 
-const filterOptions = createFilterOptions({
-  matchFrom: 'start',
-  stringify: (option) => option.title,
-});
-const FilterTA=()=>{
+  const filterOptions = createFilterOptions({
+    matchFrom: 'start',
+    stringify: (option) => option.title,
+  });
+const Drivers=()=>{
     return(<>
-   <div className='filterTA' >
+ <NavBar/>
+ <Grid container>
+
+<Grid item md={3} sm={12} xs={12}>
+ <div className='filterTA' >
    <Typography  varient="h1" sx={{
        textAlign:'center',
        fontWeight:800,
@@ -58,9 +65,31 @@ const FilterTA=()=>{
       {/* <Slider defaultValue={30} step={10} marks min={10} max={110} disabled /> */}
     </Box>
    </div>
+   </Grid>
+   <Grid item md={3} sm={5} xs={10} sx={{marginLeft:{
+      md:0,
+     sm:1,
+     xs:4
+   }}}>
+   <DCards />
+   </Grid>
+   <Grid item md={3} sm={5} xs={10} sx={{marginLeft:{
+     md:0,
+     sm:1,
+     xs:4
+   }}}>
+   <DCards />
+   </Grid>
+   <Grid item md={3} sm={5}  xs={10}sx={{marginLeft:{
+      md:0,
+     sm:1,
+     xs:4
+   }}}>
+   <DCards />
+   </Grid>
+   </Grid>
     </>)
 }
-
 const top100Films = [
     { title: 'The Shawshank Redemption', year: 1994 },
     { title: 'The Godfather', year: 1972 },
@@ -187,6 +216,4 @@ const top100Films = [
     { title: '3 Idiots', year: 2009 },
     { title: 'Monty Python and the Holy Grail', year: 1975 },
   ];
-//   Shutterstock - 🥳Download 10 FREE images from Shutterstock’s world-class library with a free 1-month trial! 🙌
-//   ad by Carbon
-export default FilterTA
+export default Drivers

@@ -1,7 +1,7 @@
 
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './components/home';
+
 import EnterOtp from './components/enterOtp'
 import UserLogin from './components/userLogin';
 import ActivateUser from './components/activateUser'
@@ -18,6 +18,9 @@ import NavBar from './components/User/navBar';
 import UserPage from './components/User/userprofile';
 import TravelAgencyPage from './components/User/travelAgency';
 import FilterTA from './components/User/filerTA';
+import Drivers from './components/User/drivers';
+import DCards from './components/User/driverProfileCard';
+import TADetails from './components/User/TADetails';
 function App() {
   return (
    <>
@@ -32,7 +35,8 @@ function App() {
              <Route path='/allUsers' element={<AllUsers/>}/>
              <Route path='/userProfile' element={<UserPage/>}/>
              <Route path='/travelAgency' element={<TravelAgencyPage/>}/>
-             <Route path='filters' element={<FilterTA/>}/>
+             <Route path='/drivers' element={<Drivers/>}/>
+            <Route path='/tADetails' element={<TADetails/>}/>
            </Routes>
      </BrowserRouter>
    </>

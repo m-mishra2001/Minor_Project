@@ -27,15 +27,15 @@ return(<>
     </Grid>
     <Grid item md={6} sm={6} lg={2} xs={12} sx={gridDiv}>
     <img src={TravelAgency} style={allUsers}/>
-    <div><Button variant="contained" disableRipple='true' sx={button}>Normal User</Button></div>
+    <div><Button variant="contained" disableRipple='true' sx={button}>Travel Agency</Button></div>
     </Grid>
     <Grid item md={6} sm={6} lg={2} xs={12} sx={gridDiv} >
    <img src={AttachCar} style={allUsers}/>
-   <div><Button variant="contained" disableRipple='true' sx={button}>Normal User</Button></div>
+   <div><Button variant="contained" disableRipple='true' sx={button}>Car Attacher</Button></div>
     </Grid>
     <Grid item md={6} sm={6} lg={2} xs={12} sx={gridDiv}     >
     <img src={DriverIcon} style={allUsers} />
-    <div><Button variant="contained" disableRipple='true' sx={button}>Normal User</Button></div>
+    <div><Button variant="contained" disableRipple='true' sx={button}>Drivers</Button></div>
 
     </Grid>
    
