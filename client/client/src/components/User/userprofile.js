@@ -11,12 +11,12 @@ const UserPage=()=>{
  return(<>
      <NavBar />
      {/* boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' */}
-    {/* <div className='formdiv'>
+    <div className='formdiv'>
     <Profile />
     <PEdit/>
-    </div> */}
-    <AlignItemsList />
-    <BookingList/>
+    </div>
+    {/* <AlignItemsList />
+    <BookingList/> */}
     {/* {
        i==0? <>
        <Profile/>

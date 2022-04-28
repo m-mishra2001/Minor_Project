@@ -22,7 +22,7 @@ return(<>
 <form>
 
 <Grid container sx={{width:{
-    md:'30vw',
+    md:'40vw',
     sm:'49vw'
 },height:'350px',marginLeft:{
     md:'auto',
@@ -34,20 +34,20 @@ return(<>
 <Grid item md={6} sm={6} xs={12} sx={{width:'30%'}}>
 <label>Name</label>
 {/* <input className='inputField1' name="name" value={pData.name} onChange={handleChange}/> */}
-<div><TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{marginTop:2}} /></div>
+<div><TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{marginTop:2,width:'16rem'}} /></div>
 </Grid>
 
 <Grid item md={6} sm={6} xs={12}>
 <label>Phone No.</label>
 {/* <input className='inputField1' name="phone" value={pData.phone} onChange={handleChange} /> */}
-<div><TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{marginTop:2}}/></div>
+<div><TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{marginTop:2,width:'16rem'}}/></div>
 </Grid>
 
 <Grid item md={12} sm={12} xs={12} >
 <label>Email ID</label>
 {/* <input className='inputField2' name="email" value={pData.email} onChange={handleChange} /> */}
 <div><TextField id="outlined-basic" label="Outlined" variant="outlined" sx={{width:{
-    md:'440px',
+    md:'35rem',
     sm:'430px'
 },marginTop:2}} /></div>
 </Grid>

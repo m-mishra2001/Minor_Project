@@ -3,12 +3,15 @@ import NavBar from './navBar'
 import TextField from '@mui/material/TextField';
 import { Grid, Typography } from '@mui/material';
 import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
+import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 
 import DCards from './driverProfileCard';
 import CarCards from './carCards';
-
+import TAgif from './TravelAgency.gif'
+import theme from '../../theme';
+import { ThemeProvider } from '@mui/private-theming';
 
 function valuetext(value) {
     return `${value}°C`;
@@ -19,12 +22,67 @@ function valuetext(value) {
     stringify: (option) => option.title,
   });
 const TADetails=()=>{
-    return(<>
-    <NavBar/>
-    <Grid container>
+  const [value, setValue] = React.useState(2);
 
-<Grid item md={3} sm={12} xs={12}>
- <div className='filterTA' >
+    return(<>
+    <ThemeProvider theme={theme}>
+     <NavBar/>
+  <div style={{
+    background:'url(https://wallpaperaccess.com/full/3915815.jpg)',
+    backgroundRepeat:'no-repeat',
+    backgroundSize: '1480px 600px',
+  height:'70%',
+
+  }}>
+     <Grid container >
+
+   <Grid item md={6} sm={12} xs={12} >
+   <img src={TAgif} className='TAdetailheader'/>
+   </Grid>
+   <Grid item md={6} sm={12} xs={12} sx={{marginTop:'60px'}}>
+   <Typography sx={{
+          fontWeight:'800',
+          fontSize:{
+            md:'50px',
+            sm:'50px',
+            xs:'25px'
+          },
+          textAlign:'center',
+          marginTop:'50px'
+      }}>
+     
+       Svvv Tour And Travels
+      </Typography>
+      <Typography sx={{
+          // fontWeight:'400',
+          // fontSize:'0px',
+          textAlign:'center',
+         
+      }}>
+       <Rating name="read-only" value={value} readOnly size='large' />
+    </Typography>
+      <Typography sx={{
+          fontWeight:'400',
+          fontSize:{
+            md:'20px',
+            sm:'20px',
+            xs:'10px'
+          },
+          textAlign:'center',
+         
+      }}>
+     
+     orem Ipsum is simply dummy text of the printing 
+     and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </Typography>
+   </Grid>
+   </Grid>
+   </div>
+    {/*cards....................  */}
+    <Grid container>
+    <Grid item md={3} sm={12}>
+    <div className='filterTA' >
    <Typography  varient="h1" sx={{
        textAlign:'center',
        fontWeight:800,
@@ -64,18 +122,28 @@ const TADetails=()=>{
     </Box>
    </div>
    </Grid>
+   <Grid container md={9}>
 
-   <Grid item md={3} sm={5} xs={10} sx={{marginLeft:{
-     md:0,
-     sm:1,
-     xs:4
-   }}}>
-   <CarCards/>
+   <Grid item md={4} sm={6} sx={{paddingLeft:'20px'}}>
+  <CarCards />
+   </Grid>
 
+   <Grid item md={4} sm={6} sx={{paddingLeft:'20px'}}>
+  <CarCards/>
+   </Grid>
+   <Grid item md={4} sm={6} sx={{paddingLeft:'20px'}}>
+  <CarCards/>
+   </Grid>
+   <Grid item md={4} sm={6} sx={{paddingLeft:'20px'}}>
+  <CarCards/>
+   </Grid>
+   <Grid item md={4} sm={6} sx={{paddingLeft:'20px'}}>
+  <CarCards/>
    </Grid>
    </Grid>
-    </>)
-
+   </Grid>
+   </ThemeProvider>
+</>)
 }
 const top100Films = [
     { title: 'The Shawshank Redemption', year: 1994 },
