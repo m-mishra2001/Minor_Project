@@ -9,6 +9,7 @@ import './components/Drivers/driver.css'
 import './components/HomePage/style.css'
 import './components/AllUsersLR/allUser.css'
 import './components/User/userStyle.css'
+import './components/RegistrationForm/TravelAgency/taReg.css'
 import DriverForm from './components/Drivers/driverForm';
 import CarCards from './components/TravelAgencies/carCards';
 import Main from './components/HomePage/main';
@@ -21,6 +22,14 @@ import FilterTA from './components/User/filerTA';
 import Drivers from './components/User/drivers';
 import DCards from './components/User/driverProfileCard';
 import TADetails from './components/User/TADetails';
+import Registration from './components/RegistrationForm/TravelAgency/registration';
+import Activation from './components/RegistrationForm/TravelAgency/taActivation';
+import Cregitration from './components/RegistrationForm/CarAttacher/Cregistration.js';
+
+
+import Cardetails from './components/RegistrationForm/CarAttacher/Cardetails';
+import DregistrationS from './components/RegistrationForm/Driver/Dregistration';
+import TLogin from './components/RegistrationForm/TravelAgency/login';
 function App() {
   return (
    <>
@@ -37,7 +46,9 @@ function App() {
              <Route path='/travelAgency' element={<TravelAgencyPage/>}/>
              <Route path='/drivers' element={<Drivers/>}/>
             <Route path='/tADetails' element={<TADetails/>}/>
+            <Route path='/tAregistration' element={<TLogin/>}/>
            </Routes>
+           {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>
    </>
   );

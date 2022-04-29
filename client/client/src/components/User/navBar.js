@@ -96,7 +96,9 @@ const NavBar=()=>{
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
+                <MenuItem key={page} onClick={()=>{
+                  page=="Travel Agency"? navigate("/travelAgency"):(page=="Drivers"?navigate("/drivers"):navigate("/"))
+                }}>
                   <Typography textAlign="center"  >{page}</Typography>
                 </MenuItem>
               ))}

@@ -30,7 +30,7 @@ const TADetails=()=>{
   <div style={{
     background:'url(https://wallpaperaccess.com/full/3915815.jpg)',
     backgroundRepeat:'no-repeat',
-    backgroundSize: '1480px 600px',
+    backgroundSize: '1580px 600px',
   height:'70%',
 
   }}>

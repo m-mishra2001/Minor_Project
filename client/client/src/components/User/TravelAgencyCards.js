@@ -5,8 +5,10 @@ import Avatar from '@mui/material/Avatar';
 import CImg from '../AllUsersLR/TravelAgency.png'
 import theme from '../../theme';
 import { ThemeProvider } from '@emotion/react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const TCard=()=>{
+    const navigate=useNavigate()
     const [value, setValue] = React.useState(2);
     return(<>
     <ThemeProvider theme={theme}>
@@ -90,7 +92,7 @@ sm:'200px',
   }}>
   Indore ,(M.P)
   </Typography>
-  <Button variant="contained" color='error' sx={{marginLeft:'65px',marginTop:'10px',width:'100px',height:'50px'}}>view PRofile</Button>
+  <Button variant="contained" color='error' sx={{marginLeft:'65px',marginTop:'10px',width:'100px',height:'50px'}} onClick={()=>{navigate("/tADetails")}}>view PRofile</Button>
 </div>
  </div>
 
