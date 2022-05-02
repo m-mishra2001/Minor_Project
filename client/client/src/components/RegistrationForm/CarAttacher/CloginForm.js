@@ -62,6 +62,9 @@ const Copyright=(props)=> {
           >
            
             <Box component="form" noValidate onSubmit={handleSubmit} >
+            <Typography component="h1"  variant="h5" sx={{textAlign:'center',marginTop:2,fontSize:'30px'}}>
+              Login 
+            </Typography>
             <Avatar
         alt="Remy Sharp"
         src={UIconImg}
@@ -91,9 +94,9 @@ const Copyright=(props)=> {
            
             }}
       />
-            <Typography component="h1" sx={{textAlign:'center'}} variant="h5">
+            {/* <Typography component="h1" sx={{textAlign:'center'}} variant="h5">
               Login
-            </Typography>
+            </Typography> */}
          
             <Grid container spacing={2} sx={{ mt: 2 }}>
                 

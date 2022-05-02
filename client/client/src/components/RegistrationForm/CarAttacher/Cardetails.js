@@ -16,7 +16,7 @@ const Cardetails=()=>{
         sm:'100vw'
     },
     height:{
-        md:'80vh',
+        md:'85vh',
         sm:'80vh'
     },
     marginLeft:'auto',

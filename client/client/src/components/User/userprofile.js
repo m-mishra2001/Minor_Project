@@ -12,7 +12,7 @@ const UserPage=()=>{
      <NavBar />
      {/* boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' */}
     <div className='formdiv'>
-    <Profile />
+    {/* <Profile /> */}
     <PEdit/>
     </div>
     {/* <AlignItemsList />

@@ -17,7 +17,7 @@ return(<>
         sm:'90vw'
     },
     height:{
-        md:'80vh',
+        md:'85vh',
         sm:'80vh'
     },
     marginLeft:'auto',

@@ -13,7 +13,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import theme from '../../../theme';
-
+import { IconButton } from '@mui/material';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 
 const Copyright=(props)=> {
@@ -61,6 +62,9 @@ const Copyright=(props)=> {
           >
            
             <Box component="form" noValidate onSubmit={handleSubmit} >
+            <Typography component="h1" sx={{textAlign:'center'}} variant="h5">
+              Sign up
+            </Typography>
             <Avatar
         alt="Remy Sharp"
         src="/static/images/avatar/1.jpg"
@@ -90,11 +94,32 @@ const Copyright=(props)=> {
            
             }}
       />
-            <Typography component="h1" sx={{textAlign:'center'}} variant="h5">
-              Sign up
-            </Typography>
+        <Grid item md={6} sm={6} xs={12} >
+      <input accept="image/*" id="icon-button-file"
+        type="file" style={{ display: 'none' }} />
+      <label htmlFor="icon-button-file">
+        <IconButton color="primary" aria-label="upload picture"
+        component="span"
+        sx={{
+            marginLeft:{
+              md:'170px',
+              sm:'140px'
+            },
+           
+            size:'500px'
+        }}
+        >
+        <CameraAltIcon sx={{
          
-            <Grid container spacing={2} sx={{ mt: 2 }}>
+         fontSize:'30px'
+        }}/>
+         
+        </IconButton>
+      </label>
+</Grid>
+   
+         
+            <Grid container spacing={2} sx={{ mt: 1 }}>
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"

@@ -19,7 +19,7 @@ return(<>
     },
     height:{
         md:'90vh',
-        sm:'80vh'
+        sm:'90vh'
     },
     marginLeft:'auto',
     marginRight:'auto',

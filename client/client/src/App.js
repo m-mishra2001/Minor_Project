@@ -30,6 +30,9 @@ import Cregitration from './components/RegistrationForm/CarAttacher/Cregistratio
 import Cardetails from './components/RegistrationForm/CarAttacher/Cardetails';
 import DregistrationS from './components/RegistrationForm/Driver/Dregistration';
 import TLogin from './components/RegistrationForm/TravelAgency/login';
+import Dloginform from './components/RegistrationForm/Driver/DloginForm';
+import DLogin from './components/RegistrationForm/Driver/Dlogin';
+import CLogin from './components/RegistrationForm/CarAttacher/Clogin';
 function App() {
   return (
    <>
@@ -46,7 +49,8 @@ function App() {
              <Route path='/travelAgency' element={<TravelAgencyPage/>}/>
              <Route path='/drivers' element={<Drivers/>}/>
             <Route path='/tADetails' element={<TADetails/>}/>
-            <Route path='/tAregistration' element={<TLogin/>}/>
+           
+            <Route path='/tAregistration' element={<Cardetails/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>
