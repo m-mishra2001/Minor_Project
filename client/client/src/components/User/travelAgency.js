@@ -6,10 +6,6 @@ import Tcard from './TravelAgencyCards'
 const TravelAgencyPage=()=>{
     return(<>
    <NavBar/>
-
- 
- 
-
    <Grid container >
    <Grid item md={4}>
    <FilterTA />
