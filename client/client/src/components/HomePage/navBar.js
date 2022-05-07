@@ -1,4 +1,4 @@
-import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery } from '@mui/material'
+import { AppBar, Button, Tab, Tabs, Toolbar, Typography, useMediaQuery, useScrollTrigger } from '@mui/material'
 import { createTheme, ThemeProvider } from '@mui/system'
 import React, { useState } from 'react'
 import DrawerComp from './drawerComp'
@@ -15,6 +15,10 @@ import { useNavigate } from 'react-router-dom';
 
 const settings = ['Manage Account', 'Logout'];
 const NavBar=()=>{
+
+
+
+
    const [login,setlogin]=useState(false)
     const [modal, setModal] = useState(false);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -51,7 +55,7 @@ const NavBar=()=>{
      <AppBar
      
      elevation={0}
-     sx={{background:'transparent'}}
+    sx={{background:"transparent"}}
      >
          <Toolbar>
          <Tabs ><Tab label="WheelzStack" sx={{fontFamily:'Rye',fontStyle:'normal',fontWeight:'400',fontSize:'24px',marginLeft:'130px'}}
@@ -105,7 +109,7 @@ const NavBar=()=>{
                 </MenuItem>
               ))}
             </Menu></>
-            :<Button variant="contained" onClick={toggleModal} sx={{width:'115px',height:'29px',top:'9px',background:'#C4C4C4',fontSize:'10px',color:'black',borderRadius:'14px'}}>Login/Registeration</Button>
+            :<Button variant="contained" onClick={toggleModal} sx={{width:'115px',height:'29px',top:'9px',background:'#C4C4C4',fontSize:'10px',color:'black',borderRadius:'10px'}}>Login/Registeration</Button>
                 
                 }
                 {modal && (

@@ -24,23 +24,23 @@ const DrawerComp=()=>{
 
     <ListItemButton >
         <ListItemIcon>
-            <ListItemText sx={{color:'black',fontFamily:'sans-serif',fontWeight:'300'}}>Cars</ListItemText>
+            <ListItemText sx={{color:'black',fontFamily:'sans-serif',fontWeight:'300'}}>Travel Agencies</ListItemText>
         </ListItemIcon>
     </ListItemButton>
 
 
     <ListItemButton >
         <ListItemIcon>
-            <ListItemText sx={{color:'black',fontFamily:'sans-serif',fontWeight:'300'}}>Services</ListItemText>
+            <ListItemText sx={{color:'black',fontFamily:'sans-serif',fontWeight:'300'}}>Drivers</ListItemText>
         </ListItemIcon>
     </ListItemButton>
 
 
-    <ListItemButton >
+    {/* <ListItemButton >
         <ListItemIcon>
             <ListItemText sx={{color:'black',fontFamily:'sans-serif',fontWeight:'300'}}>Contact Us</ListItemText>
         </ListItemIcon>
-    </ListItemButton>
+    </ListItemButton> */}
     
 
     <ListItemButton onClick={()=>navigate("/allUsers")}>

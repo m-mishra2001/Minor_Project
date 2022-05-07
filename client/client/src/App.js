@@ -38,11 +38,14 @@ import ResetPassword from './components/RegistrationForm/forgotPass/resetPass';
 import DriverProfile from './components/DriverModule/driverProfile';
 import DTravelAgencyPage from './components/DriverModule/DTravelAgency';
 import UpdatePassword from './components/RegistrationForm/forgotPass/updatePass';
+import CarAttacherProfile from './components/CarAttacherModule/carAttacherProfile';
+import CTravelAgencyPage from './components/CarAttacherModule/CtravelAgency';
 function App() {
   return (
    <>
      <BrowserRouter>
            <Routes>
+          
              <Route path='/' element={<Main/>}/>
              <Route path='/userLogin' element={<UserLogin/>} />
              <Route path='/otp' element={<EnterOtp/>}/>
@@ -59,6 +62,8 @@ function App() {
             <Route path='/resetPassword' element={<UpdatePassword/>}/>
             <Route path='/DriverProfile' element={<DriverProfile/>}/>
             <Route path='/dTravelAgency' element={<DTravelAgencyPage/>}/>
+            <Route path='/carAttacherProfile' element={<CarAttacherProfile/>}/>
+            <Route path='/ctravelAgency' element={<CTravelAgencyPage/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>

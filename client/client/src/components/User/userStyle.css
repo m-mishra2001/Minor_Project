@@ -58,8 +58,9 @@
 }
 
 .sdiv{
-    background-color: #9CC6EE;
-    color: #9CC6EE;
+    background: rgb(34,193,195),;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(40,144,158,1) 100%);
+   
     width: 30px;
     height: 50vh;
 }
@@ -71,7 +72,8 @@
     margin-left: 35px;
 }
 .cardContent{
-    background-color: #9CC6EE;
+    background: rgb(34,193,195),;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(40,144,158,1) 100%);
     width: 25vw;
     height: 50vh;
     margin-left: 41px;
