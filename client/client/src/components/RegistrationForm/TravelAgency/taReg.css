@@ -23,6 +23,11 @@ height: 55vh;
     margin-left:10px; 
     margin-top: 30px;
 }
+
+.fImg{
+    width: 25vw;
+    height: 55vh;
+    }
 @media(max-width:900px){
     .regImg{
         width: 40vw;
@@ -47,6 +52,10 @@ height: 55vh;
             margin-left:10px; 
             margin-top: 30px;
         }
+        .fImg{
+            width: 30vw;
+            height: 55vh;
+            }
 }
 
 
@@ -73,4 +82,8 @@ height: 55vh;
             margin-left:10px; 
             margin-top: 30px;
         }
+        .fImg{
+            width: 100vw;
+            height: 55vh;
+            }
 }

@@ -33,6 +33,8 @@ import TLogin from './components/RegistrationForm/TravelAgency/login';
 import Dloginform from './components/RegistrationForm/Driver/DloginForm';
 import DLogin from './components/RegistrationForm/Driver/Dlogin';
 import CLogin from './components/RegistrationForm/CarAttacher/Clogin';
+import EnterEmail from './components/RegistrationForm/forgotPass/enterEmail';
+import ResetPassword from './components/RegistrationForm/forgotPass/resetPass';
 function App() {
   return (
    <>
@@ -51,6 +53,8 @@ function App() {
             <Route path='/tADetails' element={<TADetails/>}/>
            
             <Route path='/tAregistration' element={<Cardetails/>}/>
+            <Route path='/forgotPassword' element={<EnterEmail/>}/>
+            <Route path='/resetPassword' element={<ResetPassword/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>

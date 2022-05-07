@@ -27,7 +27,7 @@ sm:'200px',
  <div style={{display:'flex'}}>
  <div className='sdiv'></div>
 <div >
-    <img src={CImg} className='cimg'/>
+    {/* <img src={CImg} className='cimg'/> */}
     <h4 style={{marginLeft:'40px ' ,marginTop:'0px'}}>TravelAgency</h4>
 </div>
 <div className='cardContent'>
