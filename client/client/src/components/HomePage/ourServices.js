@@ -8,14 +8,14 @@ import theme from '../../theme'
 const OurServices=()=>{
 
     return(<>
-     <div >
+     <div>
      <h1 className='servicesHeading'>Our Services</h1>
      <Grid container sx={{
          marginLeft:'138px',
          width:'1280px'  
      }}>
      {/* Travel Agency section */}
-     <Grid item md={6} sm={12}>
+     <Grid item md={6} sm={12} xs={12}>
       <h2 className='TRavelAgency'>Travel Agencies</h2>
       <p className='travelAgencyP'>Lorem Ipsum is simply dummy text <br/>of the
 printing and typesetting industry. <br/>Lorem 
@@ -54,7 +54,7 @@ text ever since the 1500s, when an unknown printer</p>
 </div>
     
      </Grid>
-     <Grid item md={6} sm={12}>
+     <Grid item md={6} sm={12} xs={12}>
       <img src={TaVector} className='TaVector'/>
      </Grid>
      {/* </Grid> */}
@@ -66,10 +66,10 @@ text ever since the 1500s, when an unknown printer</p>
          width:'1334px',
          
      }} > */}
-     <Grid item md={6} sm={12}>
+     <Grid item md={6} sm={12} xs={12}>
      <img src={DVector} className='TaVector'/>
      </Grid>
-     <Grid item md={6} sm={12}>
+     <Grid item md={6} sm={12} xs={12}>
      <h2 className='TRavelAgency'>Drivers</h2>
       <p className='travelAgencyP'>Lorem Ipsum is simply dummy text <br/>of the
 printing and typesetting industry. <br/>Lorem 
@@ -121,7 +121,7 @@ text ever since the 1500s, when an unknown printer</p>
          
      }}> */}
      {/* Travel Agency section */}
-     <Grid item sm={6}>
+     <Grid item md={6} sm={12} xs={12}>
       <h2 className='TRavelAgency'>Car Attacher</h2>
       <p className='travelAgencyP'>Lorem Ipsum is simply dummy text <br/>of the
 printing and typesetting industry. <br/>Lorem 
@@ -157,7 +157,7 @@ text ever since the 1500s, when an unknown printer</p>
  
 </ThemeProvider>
      </Grid>
-     <Grid item sm={6}>
+     <Grid item sm={6} xs={12}>
      <img src={CarAttach} className='TaVector'/>
      </Grid>
      {/* </Grid> */}

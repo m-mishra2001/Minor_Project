@@ -20,6 +20,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import TimeToLeaveIcon from '@mui/icons-material/TimeToLeave';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import EditIcon from '@mui/icons-material/Edit';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -100,8 +101,7 @@ export default function MiniDrawer(props) {
   };
 
   return (
-    // <Box sx={{ display: 'flex', }}>
-    //   <CssBaseline />
+
     <>
       <Drawer variant="permanent" open={open} >
         <DrawerHeader sx={{background: 'rgb(34,193,195)',
@@ -124,7 +124,7 @@ export default function MiniDrawer(props) {
         </DrawerHeader>
         <Divider />
         <List>
-          {['My Profile', 'Bookings', 'Driver'].map((text, index) => (
+          {['My Profile','Cars','Update Password'].map((text, index) => (
             <ListItemButton
               key={text}
               sx={{
@@ -132,14 +132,7 @@ export default function MiniDrawer(props) {
                 justifyContent: open ? 'initial' : 'center',
                 px: 2.5,
               }}
-              // onClick={(text)=>{
-              //  if(text=="Booking"){
-              //    props.in=1
-              //  }
-              //  if(text=="Driver"){
-              //    props.in=2
-              //  }
-              // }}
+              
             >
               <ListItemIcon
                 sx={{
@@ -148,36 +141,13 @@ export default function MiniDrawer(props) {
                   justifyContent: 'center',
                 }}
               >
-                {index == 0 ? <AccountCircleIcon/>:(index == 1?<TimeToLeaveIcon/>:<PeopleAltIcon/>) }
+                {index == 0 ? <AccountCircleIcon/>:(index == 1?<TimeToLeaveIcon/>:<EditIcon/>) }
               </ListItemIcon>
               <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           ))}
         </List>
-        {/* <Divider /> */}
-        {/* <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItemButton
-              key={text}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? 'initial' : 'center',
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : 'auto',
-                  justifyContent: 'center',
-                }}
-              >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          ))}
-        </List> */}
+        
       </Drawer>
     
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

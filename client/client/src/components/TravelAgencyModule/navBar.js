@@ -18,10 +18,10 @@ import { ThemeProvider } from '@emotion/react';
 import PersistentDrawerLeft from './drawer';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Home', 'Travel Agency', 'Drivers'];
+const pages = ['Home', 'Car Attacher','Drivers'];
 const settings = ['Manage Account', 'Logout'];
 
-const NavBar=()=>{
+const TANavBar=()=>{
   const navigate=useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -43,7 +43,7 @@ const NavBar=()=>{
     return(<>
 
 
-    <AppBar position="static" style={{background: 'rgb(34,193,195)',
+    <AppBar position="static" style={{ background: 'rgb(34,193,195)',
         background: 'linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(40,144,158,1) 100%)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -98,7 +98,7 @@ const NavBar=()=>{
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={()=>{
-                  page=="Travel Agency"? navigate("/travelAgency"):(page=="Drivers"?navigate("/drivers"):navigate("/"))
+                  page=="Travel Agency"? navigate("/ctravelAgency"):(page=="Drivers"?navigate("/travelAgencyDriverPage"):navigate("/"))
                 }}>
                   <Typography textAlign="center"  >{page}</Typography>
                 </MenuItem>
@@ -120,7 +120,7 @@ const NavBar=()=>{
               <Button
                 key={page}
                 onClick={()=>{
-                  page=="Travel Agency"? navigate("/travelAgency"):(page=="Drivers"?navigate("/drivers"):navigate("/"))
+                  page=="Travel Agency"? navigate("/ctravelAgency"):(page=="Drivers"?navigate("/travelAgencyDriverPage"):navigate("/"))
                 }}
                 sx={{ my: 2, color: 'white', display: 'block',margin:'10px',color:'black',fontWeight:'400',fontSize:'16px' }}
               >
@@ -154,7 +154,7 @@ const NavBar=()=>{
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={()=>{
-                  setting=="Manage Account"?navigate("/userProfile"):handleCloseUserMenu()
+                  setting=="Manage Account"?navigate("/travelAgencyProfile"):handleCloseUserMenu()
                 }}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
@@ -169,7 +169,7 @@ const NavBar=()=>{
   
     </>)
 }
-export default NavBar
+export default TANavBar
 
 
 

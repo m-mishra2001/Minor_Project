@@ -11,7 +11,7 @@ import './components/AllUsersLR/allUser.css'
 import './components/User/userStyle.css'
 import './components/RegistrationForm/TravelAgency/taReg.css'
 
-import CarCards from './components/TravelAgencies/carCards';
+// import CarCards from './components/TravelAgencies/carCards';
 import Main from './components/HomePage/main';
 import AllUsers from './components/AllUsersLR/allUsers';
 import CustomizedDialogs from './components/AllUsersLR/Dialog';
@@ -40,6 +40,8 @@ import DTravelAgencyPage from './components/DriverModule/DTravelAgency';
 import UpdatePassword from './components/RegistrationForm/forgotPass/updatePass';
 import CarAttacherProfile from './components/CarAttacherModule/carAttacherProfile';
 import CTravelAgencyPage from './components/CarAttacherModule/CtravelAgency';
+import TravelAgencyProfile from './components/TravelAgencyModule/travelAgency';
+import TADrivers from './components/TravelAgencyModule/driver';
 function App() {
   return (
    <>
@@ -51,7 +53,7 @@ function App() {
              <Route path='/otp' element={<EnterOtp/>}/>
              <Route path='/activateUser' element={<ActivateUser/>}/>
            
-             <Route path='/carCards' element={<CarCards/>}/>
+             
              <Route path='/allUsers' element={<AllUsers/>}/>
              <Route path='/userProfile' element={<UserPage/>}/>
              <Route path='/travelAgency' element={<TravelAgencyPage/>}/>
@@ -64,6 +66,8 @@ function App() {
             <Route path='/dTravelAgency' element={<DTravelAgencyPage/>}/>
             <Route path='/carAttacherProfile' element={<CarAttacherProfile/>}/>
             <Route path='/ctravelAgency' element={<CTravelAgencyPage/>}/>
+            <Route path='/travelAgencyProfile' element={<TravelAgencyProfile/>}/>
+            <Route path='/travelAgencyDriverPage' element={<TADrivers/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>

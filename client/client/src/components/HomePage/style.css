@@ -1,11 +1,11 @@
 /* header styling */
 .header{
-    background: url("HomePageBgImage (2).jpg") ;
-    background-repeat: no-repeat;
+    /* background: url("HomePageBgImage (2).jpg") ;
+    background-repeat: no-repeat; */
     /* background-color: black; */
-    height:100vh;
+    /* height:100vh;
     width:90wh;
-    background-size: 1480px 800px;
+    background-size: 1480px 800px; */
 }
 .headerTextdiv{
 position: absolute;

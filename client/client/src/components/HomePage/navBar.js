@@ -55,7 +55,8 @@ const NavBar=()=>{
      <AppBar
      
      elevation={0}
-    sx={{background:"transparent"}}
+    sx={{background: 'rgb(34,193,195)',
+        background: 'linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(40,144,158,1) 100%)'}}
      >
          <Toolbar>
          <Tabs ><Tab label="WheelzStack" sx={{fontFamily:'Rye',fontStyle:'normal',fontWeight:'400',fontSize:'24px',marginLeft:'130px'}}
