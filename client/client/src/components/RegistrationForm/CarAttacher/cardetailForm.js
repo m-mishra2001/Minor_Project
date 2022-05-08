@@ -15,7 +15,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import theme from '../../../theme';
 import FormGroup from '@mui/material/FormGroup';
 import Autocomplete from '@mui/material/Autocomplete';
-
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import { IconButton } from '@mui/material';
 const options = ['Desel', 'Petrol']
 
 
@@ -76,38 +77,11 @@ const Copyright=(props)=> {
           >
            
             <Box component="form" noValidate onSubmit={handleSubmit} >
-            <Typography component="h1" variant="h5" sx={{marginTop:2,fontSize:'40px',textAlign:'center'}}>
+            <Typography component="h1" variant="h5" sx={{marginTop:2,fontSize:'30px',textAlign:'center'}}>
               Sign up
             </Typography>
-            <Avatar
-        alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
-            sx={{ width: {
-            md:'100px' ,
-            sm:'100px',
-            xs:'150px' ,
+
            
-            }, height: {
-            md:'100px' ,
-            sm:'100px',
-            xs:'150px'  
-            } ,marginLeft:{
-                md:'auto',
-                sm:'auto',
-                xs:'auto',
-                sx:18
-            },
-            marginRight:{
-                md:'auto',
-                sm:'auto',
-                xs:'auto',
-                sx:18
-            },
-            
-            marginTop:'10px',
-           
-            }}
-      />
             {/* <Typography component="h1" sx={{textAlign:'center'}} variant="h5">
               Sign up
             </Typography> */}
@@ -136,6 +110,77 @@ const Copyright=(props)=> {
                     autoComplete="family-name"
                   />
                 </Grid>
+                <Grid item md={12}>
+                <Typography component="h1" variant="h5" sx={{marginTop:1,fontSize:'20px',textAlign:'center'}}>
+             Enter your Car Details Here
+            </Typography>
+                </Grid>
+                <Grid item md={12} sm={12} xs={12} sx={{display:'flex'}}>
+                <Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+            sx={{ width: {
+            md:'80px' ,
+            sm:'80px',
+            xs:'80px' ,
+           
+            }, height: {
+            md:'80px' ,
+            sm:'80px',
+            xs:'80px'  
+            } ,
+            // marginLeft:{
+            //     md:'auto',
+            //     sm:'auto',
+            //     xs:'auto',
+            //     sx:18
+            // },
+            // marginRight:{
+            //     md:'auto',
+            //     sm:'auto',
+            //     xs:'auto',
+            //     sx:18
+            // },
+            
+            marginTop:'2px',
+           
+            }}
+      />
+      {/* <Button ><input type='file' style={{marginTop:'35px'}}/></Button> */}
+
+   
+              
+               
+      <input accept="image/*" id="icon-button-file"
+        type="file" style={{ display: 'none' }} />
+      <label htmlFor="icon-button-file">
+        <Button  variant="outlined" color="primary" aria-label="upload picture"
+        component="span"
+        sx={{
+            marginLeft:{
+              md:'15px',
+              sm:'14px',
+              xs:'16px'
+            },
+           width:'300px',
+           marginTop:3
+          
+        }}
+        >
+        add image
+        {/* <CameraAltIcon sx={{
+         
+         fontSize:'30px'
+        }}/> */}
+         
+        </Button>
+      </label>
+      
+</Grid>
+{/* <Grid item md={6}>
+
+</Grid> */}
+      
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"

@@ -43,12 +43,10 @@ export default function AlertDialog() {
       />
           </DialogContentText>
         </DialogContent>
-        {/* <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
-          <Button onClick={handleClose} autoFocus>
-            Agree
-          </Button>
-        </DialogActions> */}
+        <DialogActions>
+          <Button onClick={handleClose}>Done</Button>
+          
+        </DialogActions>
       </Dialog>
     </div>
   );

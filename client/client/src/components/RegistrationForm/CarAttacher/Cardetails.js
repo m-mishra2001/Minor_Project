@@ -16,12 +16,12 @@ const Cardetails=()=>{
         sm:'100vw'
     },
     height:{
-        md:'85vh',
-        sm:'80vh'
+        md:'93vh',
+        sm:'90vh'
     },
     marginLeft:'auto',
     marginRight:'auto',
-    marginTop:'100px' ,
+    marginTop:'50px' ,
     borderRadius:'6px',
     boxShadow: {
         md:'rgba(0, 0, 0, 0.35) 0px 5px 15px' ,
