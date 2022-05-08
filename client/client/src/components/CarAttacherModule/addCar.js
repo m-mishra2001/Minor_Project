@@ -127,7 +127,7 @@ export default function FormDialog() {
             </Typography> */}
          
             <Grid container spacing={2} sx={{ mt: 2 }}>
-            <Grid item xs={12} sm={6}>
+            {/* <Grid item xs={12} sm={6}>
                   <TextField
                  
                     autoComplete="given-name"
@@ -138,8 +138,8 @@ export default function FormDialog() {
                     label="state"
                     autoFocus
                   />
-                </Grid>
-                <Grid item xs={12} sm={6}>
+                </Grid> */}
+                {/* <Grid item xs={12} sm={6}>
                   <TextField
                     required
                     
@@ -149,7 +149,7 @@ export default function FormDialog() {
                     label="city"
                     autoComplete="family-name"
                   />
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12} sm={6}>
                   <TextField
                     autoComplete="given-name"
