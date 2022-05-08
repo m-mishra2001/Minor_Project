@@ -12,6 +12,7 @@ import CarCards from './carCards';
 import TAgif from './TravelAgency.gif'
 import theme from '../../theme';
 import { ThemeProvider } from '@mui/private-theming';
+import AlertDialog from './review';
 
 function valuetext(value) {
     return `${value}°C`;
@@ -100,6 +101,21 @@ const TADetails=()=>{
      
     <span style={{fontWeight:600}}>Address:-</span><span>65 'A' Sanchar Nagar Indore </span>
       </Typography>
+
+      <Typography mt={2} sx={{
+          fontWeight:'400',
+          fontSize:{
+            md:'20px',
+            sm:'20px',
+            xs:'10px'
+          },
+          textAlign:'center',
+         
+      }}>
+     
+     <AlertDialog/>
+      </Typography>
+     
    </Grid>
    </Grid>
    </div>
