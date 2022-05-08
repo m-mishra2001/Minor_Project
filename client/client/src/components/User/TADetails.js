@@ -61,7 +61,7 @@ const TADetails=()=>{
       }}>
        <Rating name="read-only" value={value} readOnly size='large' />
     </Typography>
-      <Typography sx={{
+      <Typography mt={2} sx={{
           fontWeight:'400',
           fontSize:{
             md:'20px',
@@ -72,9 +72,33 @@ const TADetails=()=>{
          
       }}>
      
-     orem Ipsum is simply dummy text of the printing 
-     and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    <span style={{fontWeight:600}}>Email Id:-</span><span>Email@gmail.com</span>
+      </Typography>
+      <Typography mt={2} sx={{
+          fontWeight:'400',
+          fontSize:{
+            md:'20px',
+            sm:'20px',
+            xs:'10px'
+          },
+          textAlign:'center',
+         
+      }}>
+     
+    <span style={{fontWeight:600}}>Phone Number:-</span><span>98456786</span>
+      </Typography>
+      <Typography mt={2} sx={{
+          fontWeight:'400',
+          fontSize:{
+            md:'20px',
+            sm:'20px',
+            xs:'10px'
+          },
+          textAlign:'center',
+         
+      }}>
+     
+    <span style={{fontWeight:600}}>Address:-</span><span>65 'A' Sanchar Nagar Indore </span>
       </Typography>
    </Grid>
    </Grid>
