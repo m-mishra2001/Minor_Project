@@ -42,6 +42,8 @@ import CarAttacherProfile from './components/CarAttacherModule/carAttacherProfil
 import CTravelAgencyPage from './components/CarAttacherModule/CtravelAgency';
 import TravelAgencyProfile from './components/TravelAgencyModule/travelAgency';
 import TADrivers from './components/TravelAgencyModule/driver';
+import PaymentCards from './components/User/payment/paymentCarCards';
+import Payment from './components/User/payment/payment';
 function App() {
   return (
    <>
@@ -68,6 +70,7 @@ function App() {
             <Route path='/ctravelAgency' element={<CTravelAgencyPage/>}/>
             <Route path='/travelAgencyProfile' element={<TravelAgencyProfile/>}/>
             <Route path='/travelAgencyDriverPage' element={<TADrivers/>}/>
+            <Route path='/paymentCarCards' element={<Payment/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>

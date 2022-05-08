@@ -103,6 +103,10 @@ margin-left: 340px;
 margin-top: 10px;
 
 }
+.bookingCar{
+    width: 200px;
+    height: 200px;
+}
 /* media queries */
 @media (max-width:990px){
     .inputField1{
