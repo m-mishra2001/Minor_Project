@@ -59,7 +59,7 @@ const NavBar=()=>{
         background: 'linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(40,144,158,1) 100%)'}}
      >
          <Toolbar>
-         <Tabs ><Tab label="WheelzStack" sx={{fontFamily:'Rye',fontStyle:'normal',fontWeight:'400',fontSize:'24px',marginLeft:'130px'}}
+         <Tabs ><Tab label="WheelzStack" sx={{fontFamily:'Rye',fontStyle:'normal',fontWeight:'400',fontSize:'24px',marginLeft:'130px',color:"white"}}
                      elevation={0}
                  /></Tabs>
             {
@@ -70,14 +70,14 @@ const NavBar=()=>{
                 <Tabs sx={{marginLeft:'auto'}} >
                 navigate("/")
 
-                <Tab label="Home" sx={{fontWeight:'700', color:'black'}} onClick={()=>{
+                <Tab label="Home" sx={{fontWeight:'700',color:"white"}} onClick={()=>{
                   navigate("/")
                 }}/>
-                <Tab label="Travel Agencies"sx={{fontWeight:'700', color:'black'}} onClick={()=>{
+                <Tab label="Travel Agencies"sx={{fontWeight:'700',color:"white"}} onClick={()=>{
                   navigate("/travelAgency")
                 }}/>
                 navigate("/drivers")
-                <Tab label="Drivers" sx={{fontWeight:'700', color:'black'}} onClick={()=>{
+                <Tab label="Drivers" sx={{fontWeight:'700',color:"white"}} onClick={()=>{
                    navigate("/drivers")
                 }} />
                 {/* <Tab label="Contact Us" sx={{fontWeight:'700', color:'black'}}/> */}
@@ -110,7 +110,7 @@ const NavBar=()=>{
                 </MenuItem>
               ))}
             </Menu></>
-            :<Button variant="contained" onClick={toggleModal} sx={{width:'115px',height:'29px',top:'9px',background:'#C4C4C4',fontSize:'10px',color:'black',borderRadius:'10px'}}>Login/Registeration</Button>
+            :<Button variant="contained" onClick={toggleModal} sx={{width:'115px',height:'29px',top:'9px',background:'white',fontSize:'10px',color:'black',borderRadius:'5px'}}>Login/Registeration</Button>
                 
                 }
                 {modal && (

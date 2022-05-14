@@ -4,11 +4,12 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 import PaymentCards from './paymentCarCards'
+import NavBar from '../navBar';
 
 const Payment=()=>{
 
 return(<>
-
+    <NavBar/>
     <Grid Container sx={{display:'flex'}}>
     <Grid item md={7} sm={6} >
     <PaymentCards/>

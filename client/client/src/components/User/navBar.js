@@ -57,7 +57,7 @@ const NavBar=()=>{
               md:'20px',
               sm:'20px',
               xs:'15px'
-            },marginLeft:'45px',color:'black'
+            },marginLeft:'45px',color:'white'
              }}
           >
            WHEELZSTACK
@@ -122,7 +122,7 @@ const NavBar=()=>{
                 onClick={()=>{
                   page=="Travel Agency"? navigate("/travelAgency"):(page=="Drivers"?navigate("/drivers"):navigate("/"))
                 }}
-                sx={{ my: 2, color: 'white', display: 'block',margin:'10px',color:'black',fontWeight:'400',fontSize:'16px' }}
+                sx={{ my: 2, color: 'white', display: 'block',margin:'10px',color:'white',fontWeight:'400',fontSize:'16px' }}
               >
                 {page}
                
