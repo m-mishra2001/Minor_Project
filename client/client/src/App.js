@@ -44,6 +44,9 @@ import TravelAgencyProfile from './components/TravelAgencyModule/travelAgency';
 import TADrivers from './components/TravelAgencyModule/driver';
 import PaymentCards from './components/User/payment/paymentCarCards';
 import Payment from './components/User/payment/payment';
+import RulesCards from './components/User/payment/rulesCard';
+
+
 function App() {
   return (
    <>
@@ -70,7 +73,7 @@ function App() {
             <Route path='/ctravelAgency' element={<CTravelAgencyPage/>}/>
             <Route path='/travelAgencyProfile' element={<TravelAgencyProfile/>}/>
             <Route path='/travelAgencyDriverPage' element={<TADrivers/>}/>
-            <Route path='/paymentCarCards' element={<Payment/>}/>
+            <Route path='/paymentCarCards' element={<RulesCards/>}/>
            </Routes>
            {/*<Registration/> <DregistrationS/> */}
      </BrowserRouter>
